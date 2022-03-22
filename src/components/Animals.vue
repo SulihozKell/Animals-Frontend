@@ -90,7 +90,7 @@ export default {
     async editAnimal(id) {
       let response = await fetch(`http://127.0.0.1:8000/api/animals/${id}`)
       let data = await response.json()
-      this.animal = {...data};
+      this.animal = {...data}
       this.is_new_animal = false
     },
     resetForm() {
