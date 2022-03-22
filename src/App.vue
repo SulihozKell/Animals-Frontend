@@ -1,16 +1,12 @@
 <template>
   <div>
-    <Animals />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Animals from "./components/Animals.vue";
 export default {
-  name: 'App',
-  components: {
-    Animals
-  }
+  name: 'App'
 }
 </script>
 

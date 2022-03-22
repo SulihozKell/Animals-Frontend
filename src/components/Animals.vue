@@ -10,7 +10,7 @@
     <tbody>
       <tr v-for="animal in animals" v-bind:key="animal.id">
         <td>{{ animal.id }}</td>
-        <td>{{ animal.name }}</td>
+        <td><router-link :to="'/animals/' + animal.id">{{ animal.name }}</router-link></td>
         <td>
           <button @click="editAnimal(animal.id)">Edit</button>
           <button @click="deleteAnimal(animal.id)">Delete</button>
